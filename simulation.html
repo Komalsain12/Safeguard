@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Response Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Disaster Response Simulation Dashboard</h1>
+    </header>
+    <main>
+        <section id="real-time-data">
+            <h2>Real-Time Data</h2>
+            <div id="earthquake-data"></div>
+            <div id="weather-data"></div>
+        </section>
+        <section id="interactive-scenario">
+            <h2>Interactive Scenario</h2>
+            <div id="threejs-container"></div>
+        </section>
+        <section id="resource-management">
+            <h2>Resource Management</h2>
+            <p>Personnel: <span id="personnel">100</span></p>
+            <p>Equipment: <span id="equipment">50</span></p>
+            <p>Supplies: <span id="supplies">200</span></p>
+            <button onclick="allocateResources('personnel', 10)">Allocate Personnel</button>
+            <button onclick="allocateResources('equipment', 5)">Allocate Equipment</button>
+            <button onclick="allocateResources('supplies', 20)">Allocate Supplies</button>
+        </section>
+        <section id="decision-making">
+            <h2>Decision Making</h2>
+            <p>Current Decision: <span id="current-decision"></span></p>
+            <button onclick="makeDecision('Evacuate Area')">Evacuate Area</button>
+            <button onclick="makeDecision('Deploy Medical Team')">Deploy Medical Team</button>
+            <button onclick="makeDecision('Allocate Resources')">Allocate Resources</button>
+        </section>
+        <section id="multiplayer">
+            <h2>Multiplayer Mode</h2>
+            <div id="messages"></div>
+            <input type="text" id="message-input" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </section>
+        <section id="performance-analytics">
+            <h2>Performance Analytics</h2>
+            <ul id="analytics-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SafeGuard</p>
+    </footer>
+    <script src="sim.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #8a2be2;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+header h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+  
+header p {
+    font-size: 1em;
+    color: #f0e68c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding-top: 60px;
+  background: linear-gradient(45deg, #f06, #8a2be2);
+}
+  
+  
+  
+.quiz-container {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+  
+  
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+  
+  
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.options-container button {
+    padding: 10px;
+    background-color: #8a2be2;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+  
+.options-container button:hover {
+    background-color: #f06;
+    transform: scale(1.05);
+}
+  
+ 
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+  
+.btn {
+    padding: 10px 15px;
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+  
+.btn:hover {
+    background-color: #f06;
+}
+  
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+  
+.popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+}
+  
+.popup-content h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+  
+.answer-summary {
+    text-align: left;
+    font-size: 1em;
+    margin-top: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+  
+.answer-summary p.correct {
+    color: green;
+}
+  
+.answer-summary p.incorrect {
+    color: red;
+}
+  
+.hidden {
+    display: none;
+}
+  
+  
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+  

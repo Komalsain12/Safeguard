@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Management Puzzle</title>
+    <link rel="stylesheet" href="puzzle.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Resource Management Puzzle</h1>
+            <p>Distribute limited resources during a disaster scenario and minimize casualties.</p>
+        </header>
+
+        <section class="map-section">
+            <h2>Disaster Area Map</h2>
+            <h4>Select the located area and then click on  available resources which you want to distribute and then click on "Distrubute Resources" button.</h3>
+            <div class="map-container">
+                <img src="india-map.png" alt="Disaster Area Map">
+                <div class="area" id="area1">Area 1</div>
+                <div class="area" id="area2">Area 2</div>
+                <div class="area" id="area3">Area 3</div>
+                <div class="area" id="area4">Area 4</div>
+                <div class="area" id="area5">Area 5</div>
+            </div>
+        </section>
+
+        <section class="resources-section">
+            <h2>Available Resources</h2>
+            <div class="resources">
+                <div class="resource" data-resource="Food">Food</div>
+                <div class="resource" data-resource="Water">Water</div>
+                <div class="resource" data-resource="Medical Supplies">Medical Supplies</div>
+                <div class="resource" data-resource="Money">Donate Money</div>
+            </div>
+            <button id="submit">Distribute Resources</button>
+        </section>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="puzzle.js"></script>
+</body>
+</html>
