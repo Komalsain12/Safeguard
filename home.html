@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Disaster Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SafeGuard: "Prepare, Response & Overcome!"</h1>
+    </header> 
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+
+    <section class="description-section">
+        <h2>Welcome to SafeGuard: The Natural Disaster Simulation</h2>
+        <p>Learn about the various strategies to prepare for, respond to, and overcome disasters effectively.</p>
+        <p>Experience and manage evolving disaster scenarios in real-time.</p>
+        <p>Learn with interactive training modules and real-world disaster management startegies.</p>
+        
+        <div class="description-content">
+            <div class="slider">
+                <div class="slides">
+                    <img src="diasaster.jpg" alt="Image 1">
+                    <img src="1.jpeg" alt="Image 2">
+                    <img src="2.jpeg" alt="Image 3">
+                    <img src="3.jpeg" alt="Image 4">
+                    <img src="flood.jpg" alt="Image 5">
+                    <img src="cyclone.webp" alt="Image 6">
+                    <img src="earthquake.webp" alt="Image 7">
+
+                    
+                </div>
+                <div class="controls">
+                    <span class="prev" onclick="moveSlides(-1)">&#10094;</span>
+                    <span class="next" onclick="moveSlides(1)">&#10095;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-content">
+            <h2>Disaster Risk Map</h2>
+            <p>Identify risky locations across India and see if your location is in a danger zone.</p>
+        </div>
+        <div class="map-location-wrapper">
+            <div class="map-container">
+                <img src="map.png" alt="Map of India highlighting disaster-prone areas">
+            </div>
+            <div class="location-checker">
+                <h2>Check Your Location</h2>
+                <input type="text" id="location-input" placeholder="Enter your location">
+                <button id="check-location">Check Risk</button>
+                <p id="location-result"></p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="features">
+        <h2>Our Features</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Live Data Integration</h3>
+                <p>Real-time updates on disasters happening around you.</p>
+            </div>
+            <div class="card">
+                <h3>Interactive Simulations</h3>
+                <p>Experience and manage evolving disaster scenarios in real-time.</p>
+            </div>
+            <div class="card">
+                <h3>Resource Management</h3>
+                <p>Plan and allocate resources effectively to mitigate disaster impact.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="education">
+        <h2>Educational Integration</h2>
+        <div class="education-cards">
+            <div class="card">
+                <h3>Training Modules</h3>
+                <p>Engage in interactive training modules to enhance your disaster response skills.</p>
+            </div>
+            <div class="card">
+                <a href="p.html" ><h3>Quizzes and Puzzles</h3></a>
+               
+                <p>Test your knowledge on disaster management strategies.</p>
+            </div>
+            <div class="card"> 
+                
+                <a href="strategy.html" ><h3>Real-world Strategies</h3></a>
+                <p>Learn from real-world disaster management strategies and case studies.</p>
+            </div>
+        </div>  
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SafeGuard. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
