@@ -1,0 +1,169 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #EFE9E7;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #52154E, #111344);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: #f9cff2;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #f9cff2;
+}
+
+.section {
+    padding: 60px 20px;
+    background: #EFE9E7;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #111344;
+}
+
+.strategy-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background: #dae0f2;
+    
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.dark {
+    background: #6b6868;
+    color: white;
+}
+
+.module-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.module {
+    background: #444;
+    
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.module:hover {
+    background: #555;
+    
+}
+
+.module h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+   
+}
+
+.module p {
+    margin-bottom: 20px;
+
+}
+
+.learn-more {
+    background: #f9cff2;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.learn-more:hover {
+    background: #f0a500;
+}
+
+footer {
+    background: #52154E;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+footer form input, footer form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+footer form button {
+    background: #f9cff2;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+footer form button:hover {
+    background: #f9cff2;
+}

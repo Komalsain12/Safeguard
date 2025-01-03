@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evacuation Route Puzzle</title>
+    <link rel="stylesheet" href="puzzle2.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Evacuation Route Puzzle</h1>
+            <p>Test your decision-making skills by finding the safest evacuation route during a disaster scenario.</p>
+        </header>
+
+        <div class="map-container">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d552403.8982354788!2d76.8324466933771!3d28.70960855259949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d047309fff32f%3A0xfc5606ed1b5d46c3!2sDelhi!5e0!3m2!1sen!2sin!4v1724689417012!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="routes">
+                <h2>Select a Route</h2>
+                <button class="route-btn" data-route="Route 1">Route 1: North Side</button>
+                <button class="route-btn" data-route="Route 2">Route 2: South Side</button>
+                <button class="route-btn" data-route="Route 3">Route 3: East Side</button>
+                <button class="route-btn" data-route="Route 4">Route 4: West Side</button>
+                <button id="check-route" class="route-btn check-route">Check Route</button>
+                <div id="result"></div>
+            </div>
+        </div>
+        <section class="emergency-kit">
+            <h2>Emergency Kit Preparation</h2>
+            <p>Before evacuating, ensure you have an emergency kit prepared. Here are some essentials:</p>
+            <ul class="kit-list">
+                <li>Water (1 gallon per person per day for at least three days)</li>
+                <li>Non-perishable food (at least a three-day supply)</li>
+                <li>First aid kit</li>
+                <li>Flashlight with extra batteries</li>
+                <li>Whistle to signal for help</li>
+                <li>Local maps</li>
+            </ul>
+        </section>
+
+        <section class="tips">
+            <h2>Evacuation Tips</h2>
+            <ul>
+                <li>Always have a pre-planned evacuation route in mind.</li>
+                <li>Stay informed about the latest updates and roadblocks.</li>
+                <li>Help others in need during the evacuation.</li>
+                <li>Carry essentials like water, food, and medical supplies.</li>
+            </ul>
+        </section>
+
+        
+    </div>
+    <script src="puzzle2.js"></script>
+</body>
+</html>

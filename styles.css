@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #efe9e7;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #52154e,#111344);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: #111344;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.search-bar {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #111344;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.description-section {
+    padding: 40px 20px;
+    background: #efe9e7;
+    text-align: center;
+}
+
+.description-section h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description-section p {
+    font-size: 18px;
+    color: #141313;
+}
+
+
+
+
+.description-content {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    max-width: 70%; /* Ensure the section uses full width */
+    margin: 0 auto 40px auto;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 50%;
+    
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; 
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    flex: 0 0 100%; /* Each image takes up 100% of the slider width */
+    border-radius: 10px;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+.controls .prev, .controls .next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.controls .prev:hover, .controls .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.map-section {            
+    padding: 40px 20px;
+    background: #efe9e7;               
+}
+
+.map-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.map-content h2 {
+    color: #333;
+}
+
+.map-content p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.map-location-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Space between the map and location checker */
+}
+
+.map-container {
+    flex: 1;
+    max-width: 60%; 
+}
+
+.map-container img {
+    margin-left: 100px;
+    width: 60%;
+    height: auto;
+    border: 2px solid #333;
+}
+
+.location-checker {
+    flex: 1;
+    max-width: 35%; 
+    margin-top: 0;
+    margin-right: 100px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.location-checker h2 {
+    margin-bottom: 20px;
+}
+
+.location-checker input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.location-checker button {
+    width: 100%;
+    padding: 10px;
+    background-color: #111344;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.location-checker p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.features, .education {
+    padding: 60px 20px;
+    background: #efe9e7;
+}
+
+.features h2, .education h2 {
+    text-align: center;
+    color: #52154e;
+    margin-bottom: 40px;
+    
+}
+
+.feature-cards, .education-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #dae0f2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    flex: 1;
+    min-width: 250px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+    
+}
+
+footer {
+    background: #111344;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
